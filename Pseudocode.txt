@@ -1,0 +1,30 @@
+TANK
+________
+if keyboard is pressed then move the tank left or right
+
+get mouse position
+
+calculate direction to mouse
+
+rotate tank barrel based to face the mouse based on mouse position
+
+if mouse is pressed then spawn bullet with rotation and position of tank barrel
+
+move bullet forward
+
+
+SETTINGS
+_________
+Button 1
+If pressed change sprite render of tank to sprite 1
+Button 2 
+If pressed change sprite render of tank to sprite 2
+
+Button 3
+If pressed, change bullet type to small bullet 
+Button 4
+If pressed, change bullet type to large bullet
+
+Slider
+When value = 0, tank speed is 5
+when value = 1, tank speed is 10
