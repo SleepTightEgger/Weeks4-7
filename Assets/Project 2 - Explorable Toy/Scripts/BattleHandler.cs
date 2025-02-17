@@ -7,6 +7,8 @@ public class BattleHandler : MonoBehaviour
 {
     public GameObject enemy;
     public GameObject player;
+    public GameObject enemyHealth;
+    public GameObject playerHealth;
     public GameObject fight;
     public GameObject bag;
     public GameObject monsters;
@@ -17,11 +19,11 @@ public class BattleHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // GameObject newPlayer = Instantiate(enemy);
-       // newPlayer.transform.position = Vector2.one;
+        GameObject newPlayer = Instantiate(player);
+        newPlayer.transform.position = new Vector2(-6, -1);
 
-      //  GameObject newEnemy = Instantiate(player);
-      //  newEnemy.transform.position = Vector2.one;
+        GameObject newEnemy = Instantiate(enemy);
+        newEnemy.transform.position = new Vector2(6, 3);
     }
 
     // Update is called once per frame
