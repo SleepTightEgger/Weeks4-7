@@ -12,12 +12,15 @@ public class Healthbar : MonoBehaviour
     void Start()
     {
         visuals.minValue = 0;
-        visuals.maxValue = 10;
+        visuals.maxValue = player.GetComponent<MonsterScript>().health;
     }
 
     // Update is called once per frame
     void Update()
     {
-        visuals.value = player.GetComponent<MonsterScript>().health;
+        if (player != null)
+        {
+            visuals.value = player.GetComponent<MonsterScript>().health;
+        }
     }
 }

@@ -7,31 +7,44 @@ public class MonsterScript : MonoBehaviour
     public AnimationCurve curve;
     public AnimationCurve curve2;
     public float t;
-    public float health = 10;
+    public float health;
+    public string name;
+    public float attack;
+    public float defense;
+    public float spatk;
+    public float spdef;
+    public float speed;
+
+    public List<MovesScript> knownMoves;
     bool isDead = false;
     //public Healthbar healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = 10;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-            t += Time.deltaTime;
-            transform.localScale = Vector3.one * curve.Evaluate(t*5);
-
-        if (health <= 0)
+        if (t < 1 && !isDead)
         {
+            t += Time.deltaTime;
+            transform.localScale = Vector3.one * curve.Evaluate(t * 5);
+        }
+
+        if (health <= 0 && !isDead)
+        {
+            t = 0;
             isDead = true;
         }
 
-        if (isDead)
+        if (t < 1 && isDead)
         {
+            t += Time.deltaTime;
             transform.localScale = Vector3.one * curve2.Evaluate(t * 5);
-            Destroy(gameObject);
+            Destroy(gameObject, 1);
         }
     }
 }
