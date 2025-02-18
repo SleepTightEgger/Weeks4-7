@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class MovesScript : MonoBehaviour
 {
+    //set up simple variables to give the moves a few stats, move name and power are most important
     public string moveName;
     public float power;
     public string type;
     public string category;
-    // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         

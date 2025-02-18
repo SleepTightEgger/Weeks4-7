@@ -340,10 +340,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 857579693}
   m_HandleRect: {fileID: 944612936}
   m_Direction: 0
-  m_MinValue: 1
-  m_MaxValue: 54
+  m_MinValue: 20
+  m_MaxValue: 43
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 20
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3996,8 +3996,7 @@ MonoBehaviour:
   playerHealth: {fileID: 1022958246}
   fight: {fileID: 2106217492}
   potion: {fileID: 945213985}
-  monsters: {fileID: 0}
-  giveUp: {fileID: 0}
+  textSlider: {fileID: 35424710}
   fightScreen: 0
   move1: {fileID: 400905878}
   move2: {fileID: 1985257546}
