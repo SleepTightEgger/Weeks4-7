@@ -154,7 +154,7 @@ public class BattleHandler : MonoBehaviour
         {
             // call the damage player function inputting move power, type effectiveness set to true, and physical move set to true
             DamagePlayer(enemyMove.power, true, true);
-        }]
+        }
         // if the move's type is steel then,
         if (enemyMove.type == "Steel")
         {
