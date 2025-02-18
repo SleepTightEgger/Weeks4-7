@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d857211340611454cbae24a7cbc5db99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Overheat
+  moveName: Overheat
   power: 130
   type: Fire
   category: Special

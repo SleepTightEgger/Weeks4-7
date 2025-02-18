@@ -8,7 +8,7 @@ public class MonsterScript : MonoBehaviour
     public AnimationCurve curve2;
     public float t;
     public float health;
-    public string name;
+    public string monsterName;
     public float attack;
     public float defense;
     public float spatk;

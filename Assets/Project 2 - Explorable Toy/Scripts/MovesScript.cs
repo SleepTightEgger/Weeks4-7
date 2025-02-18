@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovesScript : MonoBehaviour
 {
-    public string name;
+    public string moveName;
     public float power;
     public string type;
     public string category;
