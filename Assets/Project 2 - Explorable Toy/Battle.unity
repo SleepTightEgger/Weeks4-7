@@ -1126,6 +1126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   visuals: {fileID: 670521650}
+  bh: {fileID: 0}
 --- !u!1 &798313836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,8 +1893,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2980674afbfe84483377fb7cbed99c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 294324236967319115, guid: be8a492149fc4fe43bad6e6284471031, type: 3}
   visuals: {fileID: 1022958245}
+  bh: {fileID: 0}
 --- !u!1 &1040363906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,6 +3370,7 @@ MonoBehaviour:
   giveUp: {fileID: 817973551}
   bite: {fileID: 0}
   bubble: {fileID: 0}
+  spawnedMonsters: []
 --- !u!4 &2128448265
 Transform:
   m_ObjectHideFlags: 0

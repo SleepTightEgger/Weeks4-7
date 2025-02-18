@@ -13,25 +13,11 @@ public class Healthbar : MonoBehaviour
     {
         visuals.minValue = 0;
         visuals.maxValue = 10;
-        MonsterScript p = player.GetComponent<MonsterScript>();
-        visuals.value = p.health;
-        //  MonsterScript p = player.GetComponent<MonsterScript>();
-        //  p.healthBar = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(1);
-        }
-    }
-
-    public void TakeDamage(float damage)
-    {
-        MonsterScript p = player.GetComponent<MonsterScript>();
-        p.health -= damage;
-        visuals.value = p.health;
+        visuals.value = player.GetComponent<MonsterScript>().health;
     }
 }
